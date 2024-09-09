@@ -56,7 +56,7 @@ export class ImageViewer {
 
     }
     show_image() {
-        let imgPath = this.img_dir+"img"+this.dir_id+"/"+this.img_id+this.extention;
+        let imgPath = this.img_dir+"/"+"img"+this.dir_id+"/"+this.img_id+this.extention;
         console.log(imgPath);
         this.Img.src = imgPath;
         for (let i=0; i<this.max_img_id; i++) {
