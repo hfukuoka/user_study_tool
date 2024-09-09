@@ -1,0 +1,212 @@
+html,body{
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    font-size: 1.0rem;
+    font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: none;
+}
+
+.modal-bg {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+}
+
+.modal-content {
+    position: absolute;
+    top: 200px;
+    margin: 0 auto;
+}
+
+#user-guide-block {
+    width: 600px;
+    height: 300px;
+    left: calc((100% - 600px)/2);
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.keyboard {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 1px 4px;
+    margin: 1px 2px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    font: 14px/20px Helvetica, Arial, serif;
+    text-align: center;
+    color: #666;
+}
+
+.square_btn {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+}
+
+.square_btn::before, .square_btn::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 2px; /* 棒の幅（太さ） */
+    height: 16px; /* 棒の高さ */
+    background: #333; /* バツ印の色 */
+}
+
+.square_btn::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.square_btn::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.user-guide-desc {
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#user-guide-desc-block {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.color-img1 {
+    background-color: #e2120b;
+}
+.color-img2 {
+    background-color: #008000;
+}
+.color-img3 {
+    background-color: #666666;
+}
+.color-img4 {
+    background-color: #3e68f1;
+}
+
+#content {
+    text-align: center;
+    height: 100%;
+}
+
+#bar-wrapper {
+    margin: 0;
+    margin-bottom: 3px;
+    width: 100%;
+    background-color: #cAcAcA;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+#bar {
+    padding-top: 2px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#help {
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    padding: 3px 8px;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.label {
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+#dir_label {
+    margin: 0 20px;
+}
+
+#img_label {
+    width: 120px;
+}
+
+#main_img {
+    margin: auto;
+    height: 59vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_img img {
+    height: 59vh;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#detail-wrapper {
+    margin: 0 auto;
+}
+
+#detail-wrapper .detail-block {
+    margin: 0 6px;
+}
+
+#detail-wrapper .detail-title {
+    margin-top: 4px;
+}
+
+.detail-title {
+    padding: 2px 10px;
+    color: white;
+}
+
+#detail-wrapper .detail {
+    position: relative;
+    height: calc(40vh - 60px);
+    max-height: 31vw;
+    width: 31vw;
+    max-width: calc(40vh - 60px);
+    border: #444 solid 1px;
+    border-top: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox.flex-center {
+    justify-content: center;
+    align-items: center;
+}
